@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+    --font-wix: Wix Madefor Display,arial_fallback,sans-serif;
+    --color-black-background: #111111;
+    --color-red-button: #dc296c;
+  }
