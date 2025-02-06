@@ -42,7 +42,7 @@ function Header() {
         </div>
 
         {/* This is the center part of the nav Bar.......................... */}
-        <div id="nav-center-part" className="flex justify-between items-center w-[60%] px-2">
+        <div id="nav-center-part" className="flex justify-between items-center w-[70%] px-2">
           {navLinks.map((navLink)=> <NavLink key={uniqueKey()} to={navLink.linkTo}>{navLink.name}</NavLink> )}
 
           {/* Estimate button......... */}
