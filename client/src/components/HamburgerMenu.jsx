@@ -35,7 +35,7 @@ function HamburgerMenu() {
               </button>
 
               {/* services contianer...... */}
-              { (linkIndex === index) && <div className="w-full flex flex-col font-extralight text-md bg-darkGray-background">
+              { (linkIndex === index) && <div className="w-full flex flex-col font-light text-sm bg-darkGray-background">
                 {link.services?.map((service) => (
                   <NavLink
                     to={`${link.linkTo}/${lowerCase(service).split(' ').join('')}`}
