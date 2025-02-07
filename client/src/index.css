@@ -4,4 +4,6 @@
     --font-wix: Wix Madefor Display,arial_fallback,sans-serif;
     --color-black-background: #111111;
     --color-red-button: #dc296c;
+    --color-darkGray-background: #303030;
+    --breakpoint-xs : 450px;
   }
