@@ -15,58 +15,67 @@ const socialMedia = [
   { name: "Website", icon: <FaGlobe />, href: "#" },
   { name: "Pinterest", icon: <FaPinterest />, href: "#" },
   { name: "Instagram", icon: <FaInstagram />, href: "#" },
-  
 ];
 
 const services = [
   "Web Development",
   "Mobile Development",
-  "MachineLearning and AI",
+  "Machine Learning and AI",
   "QA Testing",
   "Code Audit",
 ];
 
 function Footer() {
   return (
-    <footer className="bg-black text-[#fff] py-12 h-auto">
+    <footer className="bg-black text-white py-12 h-auto">
       <div className="mx-auto max-w-[1330px] px-6">
-        {/* Grid Layout - Max Width 1160px Without Padding */}
-        <div className="mx-auto max-w-[1122px] grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-3">
+        {/* Grid Layout */}
+        <div className="mx-auto max-w-[1080px] grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-3 justify-items-center">
           {/* Logo & Social Links */}
-          <div>
-            <div className="mb-4">
-              <img src="assets/logo.svg" alt="Anadea Logo" className="h-15 cursor-pointer" />
+          <div className="text-center">
+            <div className="mb-4 flex justify-center">
+              <img
+                src="assets/logo.svg"
+                alt="Anadea Logo"
+                className="h-16 cursor-pointer"
+              />
             </div>
-            {/* Social Icons to  intreact   with us  socially */}
-            <div className="flex flex-wrap gap-3 max-w-[170px] ">
+            {/* Social Icons */}
+            <div className="flex flex-wrap gap-3 max-w-[170px] justify-center">
               {socialMedia.map((item) => (
                 <a
                   key={uniqueKey()}
                   href={item.href}
-                  className="border border-pink-500 p-2 rounded-full flex items-center justify-center w-10 h-10 text-xl  hover:bg-pink-600"
+                  className="border border-pink-500 p-2 rounded-full flex items-center justify-center w-10 h-10 text-xl hover:bg-pink-600 transition duration-300"
                   aria-label={item.name}
                 >
                   {item.icon}
                 </a>
               ))}
             </div>
-            {/* needed comment here */}
+            {/* Extra Links */}
             <div className="mt-4 space-y-1">
-              <a href="#" className="block text-[8px] hover:text-pink-400 cursor-pointer">
+              <a
+                href="#"
+                className="block text-xs hover:text-pink-400 cursor-pointer"
+              >
                 Sitemap
               </a>
-              <a href="#" className="block text-[8px] hover:text-pink-400 cursor-pointer">
+              <a
+                href="#"
+                className="block text-xs hover:text-pink-400 cursor-pointer"
+              >
                 Business Name Generator
               </a>
             </div>
           </div>
 
-          {/* Services section  we  import   services from   above */}
-          <div className="">
+          {/* Services Section */}
+          <div className="text-center md:text-left">
             <h3 className="text-lg font-bold mb-4 hover:text-pink-500">
               Services
             </h3>
-            <ul className="space-y-2">
+            <ul className="hidden [@media(min-width:450px)]:block space-y-2">
               {services.map((service) => (
                 <li
                   key={uniqueKey()}
@@ -78,21 +87,29 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Contact Section were we need  to update  some change required */}
-          <div className="">
-            <h3 className="text-lg font-bold mb-4 hover:text-pink-500 cursor-pointer">Contact</h3>
-            <button className="border border-white px-4 py-2 bg-black rounded-lg hover:bg-white hover:text-black text-white">
+          {/* Contact Section */}
+          <div className="text-center md:text-left">
+            <h3 className="text-lg font-bold mb-4 hover:text-pink-500 cursor-pointer">
+              Contact
+            </h3>
+            <button className="border border-white px-4 py-2 bg-black rounded-lg hover:bg-white hover:text-black transition duration-300 cursor-pointer">
               Contacts
             </button>
 
-            <p className="mt-2 hover:text-pink-400 cursor-pointer">contact@anadeainc.com</p>
-            <p className="mt-2 font-bold text-[20px] hover:text-pink-400 cursor-pointer">Office</p>
+            <p className="mt-2 hover:text-pink-400 cursor-pointer">
+              contact@ayn.com
+            </p>
+            <p className="mt-2 font-bold text-lg hover:text-pink-400 cursor-pointer">
+              Office
+            </p>
             <p className="mt-2 hover:text-pink-400 cursor-pointer">Delhi</p>
           </div>
         </div>
-        <hr className="border-t-1 border-slate-100 mt-12" />
 
-        {/* Footer Bottom  side  with */}
+        {/* Divider Line */}
+        <div className="border-t border-slate-100 mt-12 max-w-[1080px] mx-auto"></div>
+
+        {/* Footer Bottom Section */}
         <div className="mt-10 text-center text-sm">
           <p>© 2000-2025 All rights reserved</p>
           <p>Privacy & Terms</p>
