@@ -13,8 +13,8 @@ function HamburgerMenu() {
   }
 
   return (
-    <div className="text-white h-dvh w-full flex md:hidden justify-between">
-      <div className="xs:w-auto bg-black-background opacity-30"></div>
+    <div className="text-white h-dvh w-full flex md:hidden justify-between absolute z-10">
+      <div className="xs:w-[60%] bg-black-background opacity-40"></div>
 
       {/* Hamberger Menu Navigation Links....... */}
       <div className="bg-black-background w-full xs:w-[350px] sm:w-[350px] flex flex-col items-baseline pt-25">
