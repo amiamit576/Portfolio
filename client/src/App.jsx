@@ -1,13 +1,13 @@
-import Header from "./components/Header";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
 import QuickContact from "./components/QuickContact";
-import Main from "./components/Main";
 
 function App() {
   return (
    <>
     <Header/>
-    
-    <QuickContact/>
+     <QuickContact/>
+    <Footer/>
    </>
   );
 }
