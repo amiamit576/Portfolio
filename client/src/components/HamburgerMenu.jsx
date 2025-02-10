@@ -13,8 +13,8 @@ function HamburgerMenu() {
   }
 
   return (
-    <div className="text-white h-dvh w-full flex md:hidden justify-between">
-      <div className="xs:w-auto bg-black-background opacity-30"></div>
+    <div className="text-white h-dvh w-full flex md:hidden justify-between absolute z-10">
+      <div className="xs:w-[60%] bg-black-background opacity-40"></div>
 
       {/* Hamberger Menu Navigation Links....... */}
       <div className="bg-black-background w-full xs:w-[350px] sm:w-[350px] flex flex-col items-baseline pt-25">
@@ -35,7 +35,7 @@ function HamburgerMenu() {
               </button>
 
               {/* services contianer...... */}
-              { (linkIndex === index) && <div className="w-full flex flex-col font-extralight text-md bg-darkGray-background">
+              { (linkIndex === index) && <div className="w-full flex flex-col font-light text-sm bg-darkGray-background">
                 {link.services?.map((service) => (
                   <NavLink
                     to={`${link.linkTo}/${lowerCase(service).split(' ').join('')}`}
